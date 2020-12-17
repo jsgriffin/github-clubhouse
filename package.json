@@ -2,7 +2,8 @@
   "name": "github-clubhouse",
   "version": "0.5.0",
   "description": "import GitHub issues as stories in Clubhouse",
-  "main": "lib/",
+  "main": "src/",
+  "type": "module",
   "bin": {
     "ch2gh": "bin/ch2gh.js",
     "gh2ch": "bin/gh2ch.js"

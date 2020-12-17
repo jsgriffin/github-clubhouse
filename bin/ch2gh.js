@@ -8,7 +8,7 @@ try {
   ghCh = require('github-clubhouse')
 } catch (err) {
   // so that we can run during development
-  ghCh = require('../lib')
+  ghCh = require('../src')
 }
 var loadConfig = ghCh.loadConfig
 var saveConfig = ghCh.saveConfig
