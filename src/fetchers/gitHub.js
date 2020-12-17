@@ -1,4 +1,4 @@
-import {apiFetch, apiFetchAllPages} from '../util/apiFetch'
+import {apiFetch, apiFetchAllPages} from '../util/apiFetch.js'
 
 function headers(token) {
   return {

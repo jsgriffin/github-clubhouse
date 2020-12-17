@@ -3,7 +3,7 @@ import buildUrl from 'build-url'
 import parseLinkHeader from 'parse-link-header'
 import sleep from 'await-sleep'
 
-import {log} from './logging'
+import {log} from './logging.js'
 
 const DEFAULT_HEADERS = {
   Accept: 'application/json',

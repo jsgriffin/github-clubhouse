@@ -1,18 +1,8 @@
 #!/usr/bin/env node
 
-var path = require('path')
-var parseArgs = require('minimist')
-
-var ghCh
-try {
-  ghCh = require('github-clubhouse')
-} catch (err) {
-  // so that we can run during development
-  ghCh = require('../src')
-}
-var loadConfig = ghCh.loadConfig
-var saveConfig = ghCh.saveConfig
-var clubhouseStoryToGithubIssue = ghCh.clubhouseStoryToGithubIssue
+import path from 'path'
+import parseArgs from 'minimist'
+import { loadConfig, saveConfig, clubhouseStoryToGithubIssue } from '../src/index.js'
 
 function run() {
   var args = parseArgs(process.argv.slice(2), {
@@ -78,6 +68,4 @@ function _loadAndOrSaveOptions(args) {
   return options
 }
 
-if (!module.parent) {
-  run()
-}
+run()
